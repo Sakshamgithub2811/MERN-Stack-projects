@@ -1,0 +1,37 @@
+<html>
+<center>
+    <form action='/product/get_amount'>
+    <table border="1"  cellpadding='10'cellspacing='0'>
+        <caption>
+            <h3>productinterface</h3>
+        </caption>
+        <tr>
+            <td><b>Select Product:</b></td>
+            <td><select name="productname">
+                    <option>-Select-</option>
+                    <option>Amul cheese </option>
+                    <option>Amul butter</option>
+                    <option>Amul milk</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+            <td><b>Quantity:</b></td>
+            <td><input type="text" name="qty"></td>
+        </tr>    
+    </table><br>
+        <input type="submit"><br>
+        <br>
+       
+    </table>
+    </form>
+    <form >
+        <% if(status){ %>
+        <h1><%=productname%></h1>
+        <h2>rate:<%=rate%> qty:<%=qty%></h2>
+        <h2><font color="green">Amount:<%=amount%></font></h2>
+         <%}%>
+    </form>
+</center>
+
+</html>
